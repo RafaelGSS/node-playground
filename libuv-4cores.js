@@ -1,11 +1,9 @@
 /**
  * This is an example that comproves libuv have pool size of threads in 4.
  * 
- * Tested with following configurations:
+ * For set LIBUV pool size set the env like:
  * 
- * SO:
- * CPU Cores:
- * 
+ * UV_THREADPOOL_SIZE=N
  */
 
 const crypto = require('crypto')
@@ -30,3 +28,4 @@ crypto.pbkdf2('a', 'b', 100000, 512, 'sha512', () => {
 crypto.pbkdf2('a', 'b', 100000, 512, 'sha512', () => {
     console.log('5:', Date.now() - start)
 })
+
