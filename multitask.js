@@ -29,10 +29,10 @@ fs.readFile('multitask.js', 'utf8', () => {
     console.log('FS:', Date.now() - start)
 })
 
-// doHash()
-// doHash()
-// doHash()
-// doHash()
+doHash()
+doHash()
+doHash()
+doHash()
 
 /**
  * The FS Module makes use of the thread pool with crypto
