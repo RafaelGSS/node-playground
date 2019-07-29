@@ -10,7 +10,7 @@ const onAcceptConnection = socket => {
   socket.write(`Welcome! Your id is: ${socket.id}`)
 
   socket.on('data', onReceiveData(socket))
-  socket.on('end', onCloseConnection.bind(socket))
+  socket.on('end', onCloseConnection.bind(this, socket))
 }
 
 const onReceiveData = socket => data => {
