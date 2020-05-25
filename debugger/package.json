@@ -5,10 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node inspect index.js",
-    "start:profilling": "node --inspect index.js"
+    "start:profilling": "node --inspect index.js",
+    "start:ts": "node --inspect --perf-basic-prof ./node_modules/.bin/ts-node index.ts"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "ts-node": "^8.10.1",
+    "typescript": "^3.9.3"
+  }
 }
